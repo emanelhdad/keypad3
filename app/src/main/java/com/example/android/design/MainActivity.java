@@ -6,9 +6,8 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    String letter = " " ;
-    int  [] n = new int[11];
 
+    String symbol = " " ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void star (View v) {
-        letter = "*";
-        displayLetter(letter);
+        symbol = "*";
+        displaysymbol(symbol);
 
     }
     public void two (View v) {
@@ -75,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         TextView numberView = (TextView) findViewById(R.id.show_text_view);
         numberView.setText(String.valueOf(number));
     }
-    public void displayLetter(String letter) {
+    public void displaysymbol(String letter) {
         TextView scoreView = (TextView) findViewById(R.id.show_text_view);
         scoreView.setText(String.valueOf(letter));
     }
